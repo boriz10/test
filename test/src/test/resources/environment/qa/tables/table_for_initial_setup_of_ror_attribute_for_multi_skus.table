@@ -1,0 +1,15 @@
+|SKU|Price|Quantity|Corporate.MinETA|TotalEnviroFee|CastingCharge|Corporate.MaxETA|Corporate.Quantity|Corporate.MinOrderQty|pdpLink|IsOnline.StoreClearance|IsOnline.Exclusive|IsOnline.Deliverable|IsOnline.Sellable|IsOnline.Orderable|Delivery.Quantity|Delivery.MinETA|Delivery.MaxETA|Pcode|
+|2081067|10.0|40|2|null|null|3|0|null|/pdp.html/etc/commerce/products/canadian-tire-goods/893/044/P7044893/PROD_6381672|N|N|null|Y|Y|null|null|null|0081405P|
+|0833693|15.27|19|1|null|null|2|0|null|/pdp.html/etc/commerce/products/canadian-tire-goods/566/997/P6997566/PROD_6467442|N|N|null|Y|Y|null|null|null|0833688P|
+|0072242|78.0|0|2|null|null|3|8|null|/pdp.html/etc/commerce/products/canadian-tire-goods/847/044/P7044847/PROD_6766502|N|N|null|Y|Y|null|null|null|0062127P|
+|2080404|42.25|2|2|null|null|5|40|null|/pdp.html/etc/commerce/products/canadian-tire-goods/901/044/P7044901/PROD_6381478|N|N|null|Y|Y|null|null|null|0081529P|
+|2080336|7.33|2|2|null|null|3|40|null|/pdp.html/etc/commerce/products/canadian-tire-goods/358/045/P7045358/PROD_6381436|N|N|null|Y|Y|null|null|null|2080260P|
+|2080350|25.0|16|2|null|null|3|100|null|/pdp.html/etc/commerce/products/canadian-tire-goods/900/044/P7044900/PROD_5595022|N|N|null|Y|Y|null|null|null|0081524P|
+|2080365|11.11|16|1|null|null|7|100|null|/pdp.html/etc/commerce/products/canadian-tire-goods/359/045/P7045359/PROD_6381452|N|N|null|Y|Y|null|null|null|2080357P|
+|2087888|78.0|0|2|null|null|3|10|null|/pdp.html/etc/commerce/products/canadian-tire-goods/872/044/P7044872/PROD_6776309|N|N|null|Y|Y|null|null|null|0080511P|
+|0418394|78.0|0|2|null|null|3|10|null|/pdp.html/etc/commerce/products/canadian-tire-goods/105/045/P7045105/PROD_6685718|N|N|null|Y|Y|null|null|null|0418397P|
+|2080946|10.01|0|2|null|null|3|50|null|/pdp.html/etc/commerce/products/canadian-tire-goods/975/044/P7044975/PROD_6381595|N|N|null|Y|Y|null|null|null|0086831P||
+|0348299|34.0|0|2|null|null|6|10|null|/pdp.html/etc/commerce/products/canadian-tire-goods/048/045/P7045048/PROD_6708636|N|N|null|Y|Y|null|null|null|0348220P||
+|0348830|56.0|0|2|null|null|3|10|null|/pdp.html/etc/commerce/products/canadian-tire-goods/059/045/P7045059/PROD_6708646|N|N|null|Y|Y|null|null|null|0348793P|1|
+|0348827|56.0|0|2|null|null|3|10|null|/pdp.html/etc/commerce/products/canadian-tire-goods/060/045/P7045060/PROD_6696280|N|N|null|Y|Y|null|null|null|0348794P|5|
+|0348788|34.0|0|2|null|null|6|10|null|/pdp.html/etc/commerce/products/canadian-tire-goods/058/045/P7045058/PROD_6174061|N|N|null|Y|Y|null|null|null|0348784P||
