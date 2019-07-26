@@ -1,18 +1,14 @@
 package test;
 
 import common.CtcProperties;
-import common.ExtendedExamplesTableFactory;
 import common.IncompatibleDataException;
 import common.OsCheck;
 import net.serenitybdd.jbehave.SerenityStories;
-import net.serenitybdd.jbehave.runners.SerenityReportingRunner;
 import net.thucydides.core.guice.Injectors;
 import net.thucydides.core.util.EnvironmentVariables;
 import org.jbehave.core.io.StoryFinder;
 import ch.lambdaj.Lambda;
-import org.jbehave.core.model.ExamplesTableFactory;
 import org.jbehave.core.steps.ParameterConverters;
-import org.junit.runner.RunWith;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.jbehave.core.steps.ParameterConverters.ParameterConverter;

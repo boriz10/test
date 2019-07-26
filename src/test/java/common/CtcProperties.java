@@ -28,8 +28,7 @@ public final class CtcProperties {
             + "/serenity.properties";
     private static final String SERENITY_COMMON_PROPERTY_FILE = "src/test/resources/common_properties/serenity_common.properties";
     private static final String SERENITY_PROPERTY_FILE = "src/test/resources/serenity.properties";
-    private static final String RP_PROPS = "src/test/resources/reportportal.properties";
-    private static final String RP_PROPS_TEMPLATE = "src/test/resources/reportportal_template.properties";
+
     private static final Logger LOG = LoggerFactory.getLogger(CtcProperties.class);
     private static EnvironmentVariables environmentVariables = Injectors.getInjector()
             .getProvider(EnvironmentVariables.class).get();
@@ -40,7 +39,6 @@ public final class CtcProperties {
         this.properties = new Properties();
         mergeSerenityConfigsAndSave(SERENITY_UNIQUE_PROPERTY_FILE, SERENITY_COMMON_PROPERTY_FILE);
         loadSerenityPropertiesToEnvironment();
-        generateDefaultRpProperties();
         loadPropertiesFromFiles(PROJECT_PROPERTY_FILE, COMMON_PROPERTY_FILE, REST_CLIENT_PROPERTY_FILE);
     }
 
@@ -48,15 +46,6 @@ public final class CtcProperties {
         return instance;
     }
 
-    private void generateDefaultRpProperties() {
-        if (Files.notExists(Paths.get(RP_PROPS))) {
-            try {
-                Files.copy(Paths.get(RP_PROPS_TEMPLATE), Paths.get(RP_PROPS), StandardCopyOption.REPLACE_EXISTING);
-            } catch (IOException e) {
-                throw new FileOperationsException("Could not generate default RP properties", e);
-            }
-        }
-    }
 
     private void mergeSerenityConfigsAndSave(final String... serenityPropertyFiles) {
         try (FileOutputStream outStream = new FileOutputStream(SERENITY_PROPERTY_FILE)) {
