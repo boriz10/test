@@ -1,4 +1,4 @@
-package common;
+package com.test.engine.exception;
 
 public class FileOperationsException extends ExtendedException {
 

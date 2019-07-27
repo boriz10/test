@@ -1,8 +1,8 @@
-package test;
+package test.core;
 
-import common.CtcProperties;
-import common.IncompatibleDataException;
-import common.OsCheck;
+import com.test.CtcProperties;
+import com.test.engine.exception.IncompatibleDataException;
+import com.test.utils.OsCheck;
 import net.serenitybdd.jbehave.SerenityStories;
 import net.thucydides.core.guice.Injectors;
 import net.thucydides.core.util.EnvironmentVariables;
@@ -12,6 +12,8 @@ import org.jbehave.core.steps.ParameterConverters;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.jbehave.core.steps.ParameterConverters.ParameterConverter;
+import test.core.story.CustomStoryParser;
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.Charset;
@@ -32,9 +34,9 @@ public class AcceptanceTestSuite extends SerenityStories {
 
     public AcceptanceTestSuite() {
         try {
-            Class.forName("common.CtcProperties");
+            Class.forName("com.test.CtcProperties");
         } catch (ClassNotFoundException e) {
-            LOG.error("Error instantiating common.CtcProperties", e);
+            LOG.error("Error instantiating com.test.CtcProperties", e);
         }
         mapToRun = Collections.synchronizedMap(getStoryScenariosMapToRun());
         assignBatches();

@@ -1,11 +1,11 @@
-package test.steps;
+package test.definitionsteps;
 
 import net.thucydides.core.annotations.Steps;
 import org.jbehave.core.annotations.Given;
 import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
 
-import test.steps.serenity.EndUserSteps;
+import com.test.steps.EndUserSteps;
 
 public class DefinitionSteps {
 

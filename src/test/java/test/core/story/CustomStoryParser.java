@@ -1,10 +1,10 @@
 
-package test;
+package test.core.story;
 
 import org.jbehave.core.model.Story;
 import org.jbehave.core.parsers.RegexStoryParser;
-import test.filters.PriorityFilter;
-import test.filters.ScenarioIdFilter;
+import test.core.story.filters.PriorityFilter;
+import test.core.story.filters.ScenarioIdFilter;
 
 import java.util.Collections;
 import java.util.List;

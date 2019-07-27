@@ -1,4 +1,4 @@
-package common;
+package com.test.engine.exception;
 
 import org.assertj.core.error.MessageFormatter;
 

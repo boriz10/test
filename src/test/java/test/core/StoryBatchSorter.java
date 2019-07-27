@@ -1,12 +1,13 @@
 
-package test;
+package test.core;
 import org.jbehave.core.model.Scenario;
 import org.jbehave.core.model.Story;
 import org.jbehave.core.parsers.RegexStoryParser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import test.filters.PriorityFilter;
-import test.filters.ScenarioIdFilter;
+import test.core.story.CustomStoryParser;
+import test.core.story.filters.PriorityFilter;
+import test.core.story.filters.ScenarioIdFilter;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;

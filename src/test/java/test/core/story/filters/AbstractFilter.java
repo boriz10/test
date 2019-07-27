@@ -1,4 +1,4 @@
-package test.filters;
+package test.core.story.filters;
 
 import com.google.common.collect.ArrayListMultimap;
 import org.jbehave.core.model.Scenario;

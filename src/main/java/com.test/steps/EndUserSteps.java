@@ -1,6 +1,7 @@
-package test.steps.serenity;
+package com.test.steps;
 
-import test.pages.DictionaryPage;
+import org.hamcrest.MatcherAssert;
+import com.test.pageobject.DictionaryPage;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
 
@@ -24,7 +25,7 @@ public class EndUserSteps {
 
     @Step
     public void should_see_definition(String definition) {
-        assertThat(dictionaryPage.getDefinitions(), hasItem(containsString(definition)));
+        MatcherAssert.assertThat(dictionaryPage.getDefinitions(), hasItem(containsString(definition)));
     }
 
     @Step

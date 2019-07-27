@@ -1,4 +1,4 @@
-package common;
+package com.test.utils;
 
 import java.util.Locale;
 

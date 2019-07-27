@@ -1,4 +1,4 @@
-package test.filters;
+package test.core.story.filters;
 
 import org.jbehave.core.model.Scenario;
 import org.jbehave.core.model.Story;
