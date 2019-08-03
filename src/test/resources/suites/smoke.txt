@@ -1,2 +1,2 @@
-stories/consult_dictionary/LookupADefinition.story
-stories/consult_dictionary/weather.story
+stories/LookupADefinition.story
+stories/weather.story
