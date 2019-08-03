@@ -1,11 +1,9 @@
 package com.test.steps;
 
-import org.hamcrest.MatcherAssert;
 import com.test.pageobject.DictionaryPage;
 import net.thucydides.core.annotations.Step;
-import net.thucydides.core.steps.ScenarioSteps;
+import org.hamcrest.MatcherAssert;
 
-import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.hasItem;
 
