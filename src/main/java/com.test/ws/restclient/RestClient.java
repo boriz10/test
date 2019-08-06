@@ -1,6 +1,9 @@
 package com.test.ws.restclient;
 
 import com.test.common.dto.*;
+import com.test.engine.httpclient.HttpRequest;
+import com.test.engine.httpclient.HttpResponseWrapper;
+import com.test.ws.restclient.parser.Parser;
 import io.restassured.RestAssured;
 import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
@@ -10,9 +13,11 @@ import io.restassured.specification.RequestSpecification;
 import net.thucydides.core.pages.PageObject;
 import org.assertj.core.api.SoftAssertions;
 import org.json.simple.JSONObject;
+import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import static com.test.engine.httpclient.HttpRequest.ContentType.APPLICATION_JSON;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class RestClient extends PageObject {
@@ -90,5 +95,20 @@ public class RestClient extends PageObject {
             assertions.assertAll();
         }
     }
+    public HttpResponseWrapper usingjsonParserToRegisterCustomer() {
 
+        CustomerDTO body = new CustomerDTO();
+        body.setLastName("testname");
+        body.setFirstName("testsurname");
+        body.setUserName("testusername");
+        body.setPassword("pass");
+        body.setEmail("email@mail.com");
+        return HttpRequest.post("http://restapi.demoqa.com/customer/register").addBody(Parser.toJson(body)).addAccept(APPLICATION_JSON.toString())
+                .addContentType(APPLICATION_JSON.toString()).doWithLogs().sendAndGetResponse();
+    }
+    @Test
+    public void sada() {
+        assertThat(usingjsonParserToRegisterCustomer().getStatusCode()).isEqualTo(200);
+
+    }
 }
