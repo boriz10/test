@@ -3,7 +3,7 @@ Feature: As a user I'd like to check weather in the any sity in the world
 
 Scenario: verify weather by GET request for cities
 Meta:
-@retailer:Winter @
+@Winter
 When WS-User send GET request to endpoint '<city>'
 Then WS-User receive HTTP response with status code '<statusCode>'
 And in Response body attribute city should be equal '<value>'
@@ -15,7 +15,7 @@ Examples:
 
 Scenario: verify registration and re-registrarion of customer by POST request
 Meta:
-@retailer:Tangerine
+@Tangerine
 When WS-User send POST request to endpoint 'register'
 Then WS-User receive HTTP response with status code '<statusCode>'
 And Response body should contains '<value>'
